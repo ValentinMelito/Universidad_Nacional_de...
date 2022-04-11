@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* color de fondo*/
+body{
+
+    background-color: rgb(102, 153, 204);
+
+}
+
+
+header{
+    
+    /*usamos el flex para que se ponga el "logo" (temporal) y el linkeo de paginas en la misma linea*/
+    display: flex;
+
+    margin: 2mm 5mm;
+    
+    /*para que este sobre toda la pagina*/
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+}
+
+/* la caja donde estan los hipervinculos*/
+.encabezadoMenu{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 70%;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+    margin-left: 4mm;
+    
+
+    border: 4px dashed rgb(51, 51, 0);
+    border-radius: 50px;
+    background-color: rgb(102, 102, 153);
+
+    
+    list-style: none;
+}
+
+
+/*la redireccion a las demas hojas de html*/
+.redireccionDePaginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 5cm;
+    height: 1.8cm;
+    margin: 2mm 5mm;
+
+
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 240, 233);
+
+    border: 3px solid rgb(51, 51, 0);
+    border-radius: 50px;
+}
+
+
+
+/*lo que cambia entre hoja y hoja de htmls*/
+/*no se si hay otra manera que no sea asi*/
+.titulo {    
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subTitulo{
+    padding: 5mm 2cm;
+    border: 3px dashed black;
+    background-color: yellowgreen;
+    font-size: 8mm;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*todo lo que seria info en la pagina*/
+.contenido{
+    width: 24cm;
+    margin: 5mm 1cm 1cm;
+    padding: 1cm 5mm;
+
+
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 185, 96);
+
+    font-size: 5mm;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+
+/*redireccion a otras hojas del html*/
+.hipervinculos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin:  1cm;
+
+    font-size: 4.3mm;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.hijos{
+    text-align: center;
+    width: auto;
+    padding: 5px;
+    background-color: yellowgreen;
+ }
+
+
+footer{
+
+    margin-top: 1cm;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*lo que no es redes*/
+.pieDePagina{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5mm;
+
+    padding-top: 2mm;
+    border: 3px solid rgb(51, 51, 0);
+    background-color: rgb(177, 129, 221);
+}
+
+.subPieDePagina{
+    padding: 1.3mm;
+}
+
+/*los links a redes sociales*/
+.redes{
+
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-top: 2mm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5mm;
+}
+
+/*los contenedores de fotos*/
+.subRedes{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    width: 4cm;
+    height: 1.8cm;
+
+    margin-left: 2mm;
+    margin-right: 2mm;
+    
+
+    background-color: rgb(213, 227, 255);
+    border: 5px ridge rgb(186, 253, 255);
+
+}
+
+/*los links a redes*/
+.links{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+    padding: 7mm 1.2cm;
+}
