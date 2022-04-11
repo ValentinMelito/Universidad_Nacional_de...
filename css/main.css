@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-image: linear-gradient(to right, rgb(206, 222, 251), rgb(102, 153, 204));
+}
+
+/*para cambiar las medidas de la foto*/
+.imagen{
+
+    height: 150px;
+    width: 150px;
+
+}
+
+.encabezadoMenu{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+ 
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.redireccionDePaginas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 16px 7px 0px;
+    padding: 10px 5px;
+
+    text-decoration: none;
+    color: black;
+
+    background-color: rgb(255, 240, 233);
+    border: 3px solid black;
+    border-radius: 50px;
+
+    font-size: 11px;
+}
+
+/*animacion botones*/
+.redireccionDePaginas:hover{
+    transform:scale(1.19);
+    transition: 1s;
+}
+
+
+
+
+.contenedor{
+
+    display: grid;
+
+    grid-template-areas: "header "
+                         "h1   "
+                         "h2     "
+                         "main  "
+                         "footer ";
+}
+
+header{
+
+    grid-area: header;
+    margin-top: 16px;
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+
+
+}
+
+
+h1{
+
+    grid-area: h1;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+h2{
+
+    grid-area: h2;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+
+main{
+    grid-area: main;
+
+    margin-bottom: 10px;
+    border: 3px solid black;
+
+    height: 400px;
+    width: 300px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: auto; 
+
+    background-color: rgb(195, 155, 211 );
+
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+.noticia{
+
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(221, 221, 250); 
+    border: 3px dashed black;
+    font-size: 12px
+
+}
+/*Pie de pagina*/
+footer{
+    grid-area: footer;
+}
+
+/*lo que no es redes*/
+.pieDePagina{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+
+    border-top: 3px solid rgb(51, 51, 0);
+    background-color: rgb(177, 129, 221);
+}
+/*los datos sobre ubicacion y numeros (todo menos redes)*/
+.subPieDePagina{
+    padding: 5px;
+}
+
+/*los links a redes sociales*/
+.redes{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*los contenedores de fotos*/
+.subRedes{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    width: 2cm;
+    height: 1cm;
+
+    margin: 0px 10px 10px;    
+
+    background-color: rgb(213, 227, 255);
+    border: 5px ridge rgb(186, 253, 255);
+
+    font-size: 13px;
+}
+
+/*para que se agranden los cuadros de redes*/
+.subRedes:hover{
+    transform:scale(1.19);
+    transition: 1.5s;
+}
+    
+/*los links a redes*/
+.links{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 11px;
+
+}
+
+iframe{
+        height: 150px;
+        width: 300px;
+    }
+    
+/*para pantallas de tablets*/
+@media only screen and (min-width:650px){
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .encabezadoMenu{
+        flex: 70%;
+
+        justify-content: space-evenly;
+        padding: 10px;
+        border: 4px dashed rgb(51, 51, 0);
+        border-radius: 50px;
+        background-color: rgb(102, 102, 153);
+        
+    }
+    
+    .redireccionDePaginas{
+        margin: 0px 2px 0px 3px;
+        
+
+        height: 40px;/*le hacemos una caja grande*/
+        width: 113px;
+        font-size: 18px;
+        
+    } 
+
+
+    h1{
+        font-size: 36px;  
+        padding: 0px;
+
+    }
+    h2{
+        font-size: 28px;
+        padding: 0px;
+    }
+
+    main{
+
+        height: 700px;
+        width: 500px;
+
+    }
+    .noticia{
+
+        margin: 16px 30px;
+        padding: 10px;
+        font-size: 20px;
+    
+    }
+
+    .pieDePagina{
+        margin-top: 30px;
+        font-size: 18px;
+    }   
+
+    .subRedes{
+        width: 150px;
+        height: 70px;
+    }
+
+    .links{
+        font-size: 16px;
+    
+    }
+
+    iframe{
+        height: 250px;
+        width: 500px;
+    }
+    
+}/*fin de quering para tablets*/
+
+/*media quering para monitores*/
+@media only screen and (min-width:1200px){
+    header{
+        margin: 2mm 5mm 2mm;
+        
+        /*para que este sobre toda la pagina*/
+        position: sticky;
+        z-index: 2;
+        top: 0;
+    
+    }
+    
+    /* la caja donde estan los hipervinculos*/
+    .encabezadoMenu{
+
+        justify-content: flex-end;
+        flex: 70%;
+
+        font-size: large;
+        
+        margin-left: 4mm;
+
+    
+    }
+    
+    
+    
+    /*la redireccion a las demas hojas de html*/
+    .redireccionDePaginas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 5cm;
+        height: 1.8cm;
+        margin: 2mm 5mm;
+
+    }
+    
+
+    
+    
+    /* el titulo de inicio*/
+    h1{
+
+        font-size: 1cm;
+
+    }
+    
+    /*inicio a noticias principales*/
+    h2{
+        display: flex;
+
+    
+        width: 15cm; 
+        margin: 5mm auto 1mm;
+    
+        
+        font-size: 0.75cm;
+    
+    }
+
+    /*quiero poner una foto de fondo para que no haya tanto espacio en la pagina, pero cunado la pongo la foto se pixelea o no alcanza con la distnacia (temporal)*/
+    .fondoMain{
+        background-color: blueviolet;
+        margin: 0cm 1cm;
+        padding: 1mm 0mm 1mm;
+     
+
+    }
+
+    /*la hoja de noticias recientes*/
+    main{
+
+        z-index: 1;/*para que la imagen este por debajo del cuadro con info*/
+      
+        font-size: large;
+    
+        height: 20cm;
+        width: 15cm;
+
+    }
+    
+    /*segundo recuadro dentro de las noticias*/
+    .noticia{
+
+        margin: 1cm;
+        padding: 7mm;
+
+    }
+
+    footer{
+        margin-top: 1cm;
+    
+        
+    }
+    
+    /*lo que no es redes*/
+    .pieDePagina{
+    
+        font-size: 4.5mm;
+    
+        padding-top: 2mm;
+    }
+
+    /*los datos sobre ubicacion y numeros (todo menos redes)*/
+    .subPieDePagina{
+        padding: 1.3mm;
+    }
+    
+
+    
+
+    /*los contenedores de fotos*/
+    .subRedes{
+        width: 4cm;
+        height: 1.8cm;
+
+    }
+
+    .links{
+        font-size: 17px;
+    
+    }
+
+    iframe{
+        height: 300px;
+        width: 600px;
+    }
+
+}
+
