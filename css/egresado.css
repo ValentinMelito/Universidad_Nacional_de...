@@ -14,8 +14,8 @@ body{
 /*para cambiar las medidas de la foto*/
 .imagen{
     margin-left: 5mm;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
 
 }
 
@@ -343,8 +343,6 @@ iframe{
 
     /*todo lo que seria info en la pagina*/
     .contenido{
-
-        grid-area: main;
 
         height: 420px;
         width: 600px;

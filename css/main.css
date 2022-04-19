@@ -11,8 +11,8 @@ body{
 /*para cambiar las medidas de la foto*/
 .imagen{
     margin-left: 5mm;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
 
 }
 
@@ -36,9 +36,7 @@ body{
     
 }
 
-.carusel{
-    grid-area: carru;
-}
+
 
 
 .contenedor{
@@ -49,7 +47,7 @@ body{
                          "h1   "
                          "h2     "
                          "main  "
-                         "carru"
+
                          "footer ";
 }
 
@@ -119,6 +117,13 @@ main{
     font-size: 12px
 
 }
+.moverInicio{
+    position: sticky;
+    z-index: 1;
+    margin: 10cm;
+    background-color: aliceblue;
+}
+
 /*Pie de pagina*/
 footer{
     grid-area: footer;
